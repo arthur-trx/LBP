@@ -1,0 +1,28 @@
+On désire écrire un programme qui permet de calculer le code LBP (Local Binary Pattern) des
+pixels (case) d'une image (matrice à deux dimensions). Il permettra également de représenter
+l'image par son histogramme LBP (un tableau d'une dimension)
+
+a) Créer une classe CImage contenant les données membres suivantes :
+Un tableau dynamique à deux dimensions d'entier
+Un entier (nbLigne) indiquant le nombre de ligne de la matrice
+Un entier (nbCol) indiquant le nombre de colonne de la matrice
+b) Ajouter un constructeur par défaut qui remplira l’intégralité du tableau dynamique par une
+valeur (une matrice nulle par exemple) et un destructeur.
+c) Ajouter un constructeur avec 2 paramètres de type entier, le premier indiquant le nombre de
+ligne et le second indiquant le nombre de colonne. Ce constructeur permet de remplir
+l’intégralité du tableau dynamique avec des valeurs tirées aléatoirement et comprises entre 0 et
+255.
+d) Ajouter à votre classe une méthode permettant de sauvegarder le tableau dynamique dans un
+fichier.
+e) Ajouter à votre classe une méthode permettant d’établir un seuil dans le voisinage 3*3 de
+chaque case avec la valeur centrale. Lorsque la valeur de case centrale est supérieure à la valeur
+du voisin, écrivez "0". Sinon, écrivez "1". Cela donne un nombre binaire à 8 chiffres. Cette
+méthode renvoie un tableau qui stocke la chaine binaire pour chaque case
+f) Ajouter à votre classe une méthode permettant de convertir le tableau qui stocke les nombres
+binaires en un tableau des nombres décimaux.
+g) Ajouter à votre classe une méthode nommée Histogramme permettant de calculer le nombre
+d’occurrence de chaque nombre décimal dans le tableau précèdent. Cette méthode renvoie un
+tableau d’une seule dimension correspondant à l'histogramme.
+h) Sauvegarder le tableau renvoyé par la méthode Histogramme sous Excel avec une méthode
+nommée SaveHist.
+i) Tester le tout dans le programme principal
